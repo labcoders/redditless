@@ -20,6 +20,14 @@ executable redditless
   main-is:             Main.hs
   -- other-modules:       
   -- other-extensions:    
-  build-depends:       base >=4.9 && <4.10, reddit, text>=1.2.2.1
+  build-depends:
+    base >=4.9 && <4.10,
+    reddit >=0.2 && <0.3,
+    text >=1.2 && <1.3,
+    servant >=0.7 && <0.8,
+    servant-lucid >=0.7 && <0.8,
+    lucid >=2.9 && <2.10,
+    HaskellNet-SSL >=0.3 && <0.4,
+    HaskellNet >=0.5 && <0.6
   hs-source-dirs:      src
   default-language:    Haskell2010
